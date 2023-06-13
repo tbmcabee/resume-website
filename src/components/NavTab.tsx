@@ -1,13 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-const NavTab = () => {
+interface NavProps {
+  tabs: string[];
+}
+
+const NavTab = ({ tabs }: NavProps) => {
+  const [tabIndex, setTabIndex] = useState(-1);
+
   return (
-  <nav className="nav justify-content-center">
-    <a className="nav-link" href="#">Home</a>
-    <a className="nav-link" href="#">Projects</a>
-    <a className="nav-link" href="#">Experience</a>
-    <a className="nav-link" href="#">About</a>
-    <a className="nav-link" href="#">Contact</a>
+  <nav className="nav nav-pills justify-content-center">
+    {tabs.map((tab, index) => (
+      <li className="nav-item">
+        <a className={tabIndex === index ? "nav-link active" : "nav-link"} key={tab} onClick={() => {setTabIndex(index)}} href="#">{tab}</a>
+      </li>
+    ))}
   </nav>
   );
   
