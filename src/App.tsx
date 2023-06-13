@@ -1,12 +1,13 @@
 import { useState } from "react";
-import "./App.css";
-import NavTab from "./components/NavTab";
+import NavTab from "./components/navTab";
 
 function App() {
-  return 
-  <div> 
-    <NavTab/>
-  </div>;
+  return (
+    <div>
+      <h1 className="text-center">My Resume Website</h1>
+      <NavTab/>
+    </div>
+  );
 }
 
 export default App;
