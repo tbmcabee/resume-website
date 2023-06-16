@@ -1,5 +1,5 @@
 import React from 'react'
-import NavTab from './NavTab'
+import NavTab from '../NavTab'
 
 function TestPage() {
     

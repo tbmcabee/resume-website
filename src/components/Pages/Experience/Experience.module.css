@@ -1,0 +1,15 @@
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+    background-color: #2979ff;
+    color: white;
+    width: 560px;
+    border-radius: 25px;
+}
+
+.alignDiv {
+    margin-top: 40px;
+}
